@@ -1,0 +1,127 @@
+body {
+  border-left: 2px solid blue;
+}
+#my-header {
+  text-align: center;
+  height: 10vh;
+  width: 100vw;
+  background: linear-gradient(90deg, rgb(0, 0, 0), white);
+  font-size: 50px;
+  letter-spacing: 30px;
+  padding: 0;
+  margin-left: 0;
+  opacity: 50%;
+  font-weight: 800;
+}
+span:nth-child(1) {
+  color: white;
+}
+span:nth-child(2) {
+  color: rgb(197, 197, 197);
+}
+span:nth-child(3) {
+  color: rgb(169, 169, 169);
+}
+span:nth-child(4) {
+  color: rgb(141, 141, 141);
+}
+span:nth-child(5) {
+  color: rgb(100, 100, 100);
+}
+span:nth-child(6) {
+  color: rgb(84, 84, 84);
+}
+span:nth-child(7) {
+  color: rgb(55, 55, 55);
+}
+span:nth-child(8) {
+  color: rgb(27, 27, 27);
+}
+span:nth-child(9) {
+  color: rgb(0, 0, 0);
+}
+
+label {
+  position: absolute;
+  width: 130px;
+  height: 10vh;
+  background-color: black;
+  border-radius: 50px;
+  cursor: pointer;
+}
+input {
+  position: absolute;
+  display: none;
+}
+.slider {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgb(255, 242, 0);
+
+  left: 5px;
+  font-size: medium;
+  letter-spacing: normal;
+  position: relative;
+  top: 4px;
+}
+input:checked ~ .slider {
+  background-color: rgb(255, 255, 255);
+  transform: translate(57px);
+}
+
+#choose {
+  text-align: center;
+  font-family: courier;
+  letter-spacing: 30px;
+}
+.levels {
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 300px 300px 300px;
+  justify-items: center;
+  margin: 0;
+  justify-content: center;
+}
+.level {
+  height: 250px;
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  box-shadow: 10px 15px 10px 15px;
+}
+.button {
+  margin: 0;
+  position: relative;
+  bottom: -70px;
+}
+button {
+  height: 50px;
+  width: 100px;
+  filter: blur(-1px);
+}
+@media (max-width: 800px) {
+  #my-header {
+    letter-spacing: 0;
+  }
+  #choose {
+    letter-spacing: 0;
+  }
+}
+.number1,
+.number2,
+.number3 {
+  background-color: green;
+}
+.number4,
+.number5,
+.number6 {
+  background-color: blue;
+}
+.number7,
+.number8,
+.number9 {
+  background-color: red;
+}
